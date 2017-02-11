@@ -58,5 +58,4 @@ def create_jobs(num):
 
 create_jobs(sys.argv[1])
 create_workers()
-while(not queue.empty()):
-  pass
+queue.join()
